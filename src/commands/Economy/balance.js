@@ -61,7 +61,7 @@ export default {
                     },
                     {
                         name: "🏦 Bank",
-                        value: `$${bank.toLocaleString()} / $${maxBank.toLocaleString()}`,
+                        value: `$${bank.toLocaleString()}
                         inline: true,
                     },
                     {
