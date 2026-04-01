@@ -17,7 +17,7 @@ export default {
 
     async execute(interaction, client) {
         // 🔒 ADMIN CHECK
-        if (interaction.user.id !== 'YOUR_DISCORD_ID') {
+        if (interaction.user.id !== '922887788804837387') {
             return interaction.reply({ 
                 content: '❌ You are not allowed to use this command.', 
                 ephemeral: true 
