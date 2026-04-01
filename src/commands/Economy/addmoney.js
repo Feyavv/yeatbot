@@ -43,3 +43,15 @@ export default {
         );
     }
 };
+export async function addMoney(client, guildId, userId, amount) {
+    const user = await getUser(client, guildId, userId);
+
+    user.balance += amount;
+
+    await user.save(); // ⚠️ THIS LINE IS CRITICAL
+
+    return {
+        success: true,
+        newBalance: user.balance
+    };
+}
